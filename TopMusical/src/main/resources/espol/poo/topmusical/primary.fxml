@@ -8,16 +8,15 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="espol.poo.topmusical.PrimaryController">
-   <center>
-      <VBox fx:id="vbTop10" prefHeight="351.0" prefWidth="449.0" BorderPane.alignment="CENTER">
-         <BorderPane.margin>
-            <Insets top="20.0" />
-         </BorderPane.margin>
-      </VBox>
-   </center>
-   <right>
+   <top>
+      <Label text="RadioXYZ Top 10" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+   </top>
+   <left>
       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
          <BorderPane.margin>
             <Insets right="20.0" top="20.0" />
@@ -36,12 +35,12 @@
             <HBox fx:id="hbHistorial" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" />
          </children>
       </VBox>
+   </left>
+   <right>
+      <VBox fx:id="vbTop10" prefHeight="351.0" prefWidth="449.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets top="20.0" />
+         </BorderPane.margin>
+      </VBox>
    </right>
-   <top>
-      <Label text="RadioXYZ Top 10" BorderPane.alignment="CENTER">
-         <font>
-            <Font name="System Bold" size="24.0" />
-         </font>
-      </Label>
-   </top>
 </BorderPane>
